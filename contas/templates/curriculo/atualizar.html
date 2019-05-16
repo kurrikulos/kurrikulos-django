@@ -1,0 +1,16 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kurrikulos - Atualizar / Deletar currículo</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit" >Atualizar informações</button>
+        <a href="{% url 'url_deletar' curriculo.id %}">Deletar</a>
+    </form>
+</body>
+</html>

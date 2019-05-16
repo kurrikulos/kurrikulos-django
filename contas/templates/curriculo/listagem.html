@@ -1,0 +1,44 @@
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% for curriculo in curriculos %}
+        <ul>
+            <a href="{% url 'url_atualizar' curriculo.id%}">
+                <li>{{curriculo.nomeCompleto}}</li>
+                <li>{{curriculo.telefone}}</li>
+                <li>{{curriculo.idade}}</li>
+                <li>{{curriculo.email}}</li>
+                <li>{{curriculo.endereco}}</li>
+                <li>{{curriculo.numero}}</li>
+                <li>{{curriculo.ap}}</li>
+                <li>{{curriculo.bloco}}</li>
+                <li>{{curriculo.rua}}</li>
+                <li>{{curriculo.quadra}}</li>
+                <li>{{curriculo.bairro}}</li>
+                <li>{{curriculo.cidade}}</li>
+                <li>{{curriculo.estado}}</li>
+                <li>{{curriculo.objetivo}}</li>
+                <li>{{curriculo.educacao}}</li>
+                <li>{{curriculo.nomeCurso}}</li>
+                <li>{{curriculo.descricaoCurso}}</li>
+                <li>{{curriculo.instituicao}}</li>
+                <li>{{curriculo.empresa}}</li>
+                <li>{{curriculo.cargo}}</li>
+                <li>{{curriculo.periodo}}</li>
+                <li>{{curriculo.descricaoProfissao}}</li>
+                <li>{{curriculo.titulo}}</li>
+                <li>{{curriculo.dataExpedicao}}</li>
+                <li>{{curriculo.descricaoCertificado}}</li>
+            </a>
+        </ul>
+        <br><br>
+    {% endfor %}
+
+    <a href="{% url 'url_criar'%}">Novo</a>
+</body>
+</html>
