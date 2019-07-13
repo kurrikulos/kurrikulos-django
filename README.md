@@ -18,8 +18,9 @@ O sistema está cru e você pode ir aperfeiçoando e incluindo em seu portfólio
 ### Instalação
 
 >**É BEM SIMPLES!** Siga o passo a passo.
+- Inicie o serviço do MySQL
+- Crie a base de dados
 - [Clone esse repositório em sua Área de Trabalho][2] ;
 - Descompacte/Extraia o arquivo que baixou;
 - Abra a pasta com o VSCode ou pelo terminal;
-- digite `npm i` para instalar todas as dependências.
-- pra rodar `nodemon` ou `node server.js`
+- digite `python3 manaege.py runserver`
